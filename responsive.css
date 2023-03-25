@@ -1,0 +1,794 @@
+@charset "utf-8";
+.sp {
+  display: none;
+}
+
+
+/* #navi {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+} */
+
+@media screen and (min-width: 801px){
+  .floating_banner,
+  .floating_banner.active {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px){
+  /***トップページ***/
+  .container {
+    width: 100%;
+  }
+  #header_box {
+    /* justify-content: space-between; */
+  }
+  .top_logo {
+    flex: 1;
+    width: calc(100%);
+  }
+  .top_icon {
+    width: auto;
+    display: flex;
+    flex-direction:row-reverse;
+  }
+  .tel_contact_box {
+    float: inherit;
+  }
+
+  img{
+    max-width: 100%;
+  }
+  #navi {
+    width: 100%;
+  }
+  .navi_box {
+    width: 100%;
+    display: flex;
+  }
+  .navi2_frame {
+    width: 100%;
+  }
+  
+  .navi_block {
+    width: 20%;
+  }
+  .navi_box a {
+    padding: 0;
+  }
+
+
+  .middle_icon_box .warp,
+  .middle_note .warp {
+    width: 100%;
+    display: flex;
+  }
+  .middle_icon_bg,
+  .middle_note_unit {
+    width: calc(100% / 3);
+  }
+  .middle_icon_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+  .middle_icon_bg.sp {
+    display: none;
+  }
+  .middle_icon_box img {
+    max-width: 100%;
+  }
+
+  .bottom .wrap {
+    width: calc(100% - 30px);
+    display: flex;
+    height: auto;
+  }
+  .news,
+  .agency_agreement {
+    width: calc(50% - 5px);
+  }
+
+  #footer_area,
+  #footer_area .wrap {
+    width: 100%;
+  }
+  .footer_logo {
+
+    /* background-size: contain; */
+  }
+  .footer_link {
+    flex: 1;
+    width: auto;
+  }
+
+  .footer_link p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  /***アバウト***/
+  p.contents_explanation {
+    width: 100%;
+  }
+  
+  div.sales_points {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  p#h_titile_function_explanations {
+    width: 100%;
+  }
+  div.sales_points p#h_titile_function_explanations {
+    width: calc(100% - 60px);
+  }
+
+  div.sales_points_explanations {
+    width: calc(50% - 60px);
+    height: auto;
+  }
+  div.sales_points_explanations#sp01,
+  div.sales_points_explanations#sp02,
+  div.sales_points_explanations#sp03,
+  div.sales_points_explanations#sp04 {
+    height: auto;
+  }
+  #about_container div.wrapper_gray {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  div.function_explanations {
+    width: 100%;
+  }
+
+  div.function_explanations#fe01,
+  div.function_explanations#fe02,
+  div.function_explanations#fe03,
+  div.function_explanations#fe04 {
+    height: auto;
+  }
+
+
+  /***FAQ***/
+  .faq_com2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .faq_com_text {
+    width: 100%;
+  }
+  .faq_title {
+    width: calc(100% - 50px);
+  }
+  .faq_label_lr {
+    width: 100%;
+    display: flex;
+    -webkit-flex-flow: inherit;
+    height: auto;
+    align-items: center;
+  }
+  .faq_text {
+    width: calc(100% - 50px);
+    height: auto;
+
+  }
+  .label_faq {
+    width: calc(100% - 50px);
+  }
+  input[type="checkbox"].on-off:checked + ul {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .inline-block li {
+    width: calc(100% - 50px);
+  }
+
+  
+  /***プライス***/
+  .price_table {
+    width: calc(100% - 30px);
+  }
+
+  /***コンタクト***/
+  #contact_area {
+    width: 100%;
+  }
+  #contact_table {
+    width: calc(100% - 30px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #contact_table .td1 {
+    width: 70px;
+  }
+  #contact_table .td2 {
+    width: calc(100% - 70px);
+  }
+  #contact_table input,
+  #contact_table textarea {
+    width: calc(100% - 50px);
+  }
+
+  .captcha_area {
+    max-width: 1000px;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+  }
+  .submit_area {
+    width: 100%;
+  }
+
+
+
+
+  /***トライアル***/
+  #trial_area {
+    width: 100%;
+  }
+  #table_trial {
+    width: calc(100% - 30px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #table_trial .td1 {
+    width: 100px;
+  }
+  #table_trial .td2 {
+    width: calc(100% - 100px);
+  }
+  #table_trial .input1 {
+    width: calc(100% - 50px);
+  }
+
+  #table_trial .td3 {
+    width: 100%;
+    max-width: 950px;
+  }
+
+  #table_trial textarea {
+    width: 90%;
+    max-width: 630px;
+  }
+
+  #contact_table .td_confirm {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  /***ダウンロード***/
+  .caution {
+    width: calc(100% - 30px);
+  }
+  .mac {
+    width: calc(100% - 30px);
+  }
+  .install_info {
+    width: calc(100% - 30px);
+  }
+  .download_table {
+    width: calc(100% - 30px);
+  }
+
+
+
+}
+
+
+.openbtn1 {
+  display: none;
+}
+.sp_tel {
+  display: none;
+}
+@media screen and (max-width: 800px){
+.sp {
+  display: block;
+}
+.pc {
+  display: none;
+}
+#header_box {
+  justify-content: space-between;
+}
+.top_icon {
+  display: none;
+}
+
+.sp_tel {
+  display: flex;
+  margin-right: 80px;
+  align-items: center;
+}
+
+.sp_tel figure {
+  max-width: 35px;
+  margin: 0;
+  padding: 5px;
+  border: 3px solid #0495c7;
+  border-radius: 5px;
+  display: inline-flex;
+}
+
+.top_logo {
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+}
+
+/***メニュー関連***/
+#navi_area {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+#navi_area.open {
+  z-index: 80;
+  opacity: 1;
+  visibility: visible;
+}
+
+#navi {
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.navi_box {
+  display: block;
+  height: auto;
+}
+.navi_block {
+  width: 100%;
+  height: auto;
+}
+
+.openbtn1 {
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 10px;
+  z-index: 1000;
+}
+.openbtn1{
+  background:#0495c7;
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+  border-radius: 5px;
+}
+
+/*ボタン内側*/
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background: #fff;
+    width: 45%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;/*真ん中の線は透過*/
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.navi_box.open {
+
+}
+
+
+/***フローティング***/
+.floating_banner {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.floating_banner.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.floating_banner > a {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.floating_banner > a.mail {
+  background-color: #333;
+}
+.floating_banner > a.apply {
+  background-color: #0495c7;
+}
+
+.floating_banner > a figure {
+  max-width: 40px;
+  flex: 1;
+  margin: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.floating_banner > a p {
+  text-align: center;
+}
+
+
+
+/***トップ***/
+#circ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#circ h1 {
+  padding-top: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.middle {
+  height: auto;
+}
+.middle_icon_bg {
+  background: none;
+  height: auto;
+}
+.middle_icon_box {
+  display: none;
+}
+.middle_icon_bg.sp {
+  display: flex;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+  width: 100%;
+  max-width: 160px;
+  margin: 0 auto;
+
+}
+.middle_icon_bg.sp figure {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.middle_icon_bg.sp img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: auto;
+  max-width: inherit;
+}
+
+.middle_title_main_label {
+  font-size: 22pt;
+}
+.middle_note {
+  height: auto;
+  background-color: transparent;
+}
+.middle_note .warp {
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+.middle_note_unit {
+  width: calc(100% - 30px);
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #eee;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.bottom {
+  height: auto;
+}
+
+.bottom .wrap {
+  display: block;
+  padding-bottom: 20px;
+}
+.news, .agency_agreement {
+  width: 100%;
+}
+
+.news {
+  margin-bottom: 20px;
+}
+
+#footer {
+  height: auto;
+  padding-bottom: 20px;
+}
+#footer_area {
+  height: auto;
+}
+#footer_area .wrap {
+  height: auto;
+  display: block
+}
+.footer_logo {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  background-size: contain;
+  background-position: center;
+}
+.footer_bar {
+  display: none;
+}
+.footer_link {
+  height: auto;
+
+}
+
+.footer_link p {
+  justify-content: center;
+}
+
+#pageTop {
+  bottom: 70px;
+}
+
+
+
+/***プライス***/
+.title_fuction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+p.contents_explanation {
+  height: auto;
+  padding: 0;
+}
+#price_container {
+  padding-bottom: 60px;
+}
+.price_table th {
+  text-align: center;
+}
+
+
+/***トライアル***/
+#trial_area {
+  padding-top: 20px;
+}
+
+/***アバウト***/
+div.sales_points_explanations {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+
+/***フッター***/
+.footer_link {
+  display: none;
+}
+#footer_area {
+  padding-bottom: 70px;
+}
+}
+
+
+
+
+.min_sp {
+  display: none;
+}
+@media screen and (max-width: 600px){
+  .min_pc {
+    display: none;
+  }
+  .min_sp {
+    display: block;
+  }
+
+  p.contents_explanation {
+    font-size: 30px;
+  }
+/***プライス***/
+
+.price_table th,
+.price_table th.th_blank {
+  width: 90px;
+  padding-right: 0;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+.price_table tr td:nth-of-type(1) {
+  width: calc(100% - 80px);
+}
+
+/***トライアル***/
+#table_trial table,
+#table_trial tr {
+  display: block;
+  width: 100%;
+}
+#table_trial .td0 {
+  width: 100%;
+  height: auto;
+}
+#table_trial td,
+#table_trial .td1,
+#table_trial .td2 {
+  display: block;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+#table_trial .td1 {
+  text-align: center;
+  background-color: #0495c7;
+  color: white;
+  height: auto;
+}
+#table_trial td > .select1 {
+  width: 90px;
+}
+#table_trial td > .select1:not(:first-of-type) {
+  width: 60px;
+}
+
+#table_trial .input1 {
+  margin: 0 auto;
+}
+
+#table_trial textarea {
+  margin: 0 auto;
+  display: block;
+}
+
+#contact_table .td_confirm {
+  min-height: 300px;
+  height: auto;
+}
+
+.submit_button {
+  max-width: 300px;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+/***ダウンロード***/
+.download_td20,
+.download_td2010 {
+  width: auto;
+  height: auto;
+}
+
+.download_table tr td:nth-of-type(1) {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.download_table.second {
+  margin-top: 40px;
+}
+.portable_install {
+  margin-left: 0;
+}
+
+/***お問い合わせ***/
+#contact_container {
+  padding-bottom: 50px;
+}
+#contact_table table,
+#contact_table tr {
+  display: block;
+  width: 100%;
+}
+#contact_table .td0 {
+  width: 100%;
+  height: auto;
+}
+#contact_table td,
+#contact_table .td1,
+#contact_table .td2 {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+#contact_table .td2 {
+  padding: 0;
+}
+
+#contact_table .td2.ex {
+  padding-bottom: 20px;
+}
+
+#contact_table .td1 {
+  text-align: center;
+  background-color: #0495c7;
+  color: white;
+  height: auto;
+}
+#contact_table td > .select1 {
+  width: 90px;
+}
+#contact_table td > .select1:not(:first-of-type) {
+  width: 60px;
+}
+
+#contact_table .input1 {
+  margin: 0 auto;
+}
+
+
+/***アバウト***/
+
+p.sales_ponts_title {
+  font-size: 18px;
+}
+div.function_explanations {
+  padding: 10px;
+  padding-top: 150px;
+  background-position: top center;
+}
+
+}
